@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional portfolio showcasing skills, projects, certifications, and more.">
+    <meta name="keywords" content="Portfolio, Web Development, Projects, Certifications, Hackathons, Skills">
+    <meta name="author" content="Your Name">
+    <title>Bazil Suhail</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Navigation Bar --> 
+    <header class="header"> 
+        <div class="logo"><a href="#" id="nav-logo">MyPortfolio</a></div> 
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#about" id="nav-about">About</a>
+            <a href="#skills" id="nav-skills">Skills</a>
+            <a href="#projects" id="nav-projects">Projects</a>
+            <a href="#certifications" id="nav-certifications">Certifications</a>
+            <a href="#degrees" id="nav-degrees">Degrees</a>
+            <a href="#contact" id="nav-contact">Contact</a>
+            <div>
+                <select id="language-selector" onchange="translatePage()">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                    <option value="ur">Urdu</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+          <h1>Hi, I am <span>Bazil Suhail</span></h1>
+          <p>We provide innovative solutions for your business needs. Our mission is to deliver quality, reliability, and innovation.</p>
+          <div class="social-media">
+            <a href="#" aria-label="Facebook" class="social-icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" aria-label="Twitter" class="social-icon"><i class='bx bxl-twitter'></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+      </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h1 id="about-heading">About Me</h1>
+        <p id="about-content">Welcome to my portfolio. I am a professional developer with expertise in full-stack web
+            development, project management, and software design.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h1 id="skills-heading">Skills</h1>
+        <div class="skills-grid">
+            <!-- Soft Skills -->
+            <div class="card">
+                <h2 id="soft-skills-heading">Soft Skills</h2>
+                <ul id="soft-skills-list">
+                    <li>Leadership</li>
+                    <li>Communication</li>
+                    <li>Time Management</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+            <!-- Hard Skills -->
+            <div class="card">
+                <h2 id="hard-skills-heading">Hard Skills</h2>
+                <ul id="hard-skills-list">
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <!-- Technical Details -->
+            <div class="card">
+                <h2 id="technical-skills-heading">Technical Details</h2>
+                <ul id="technical-skills-list">
+                    <li>Version Control: Git, GitHub</li>
+                    <li>Databases: MongoDB, SQL</li>
+                    <li>Web Technologies: HTML5, CSS3, REST APIs</li>
+                    <li>DevOps: Docker, Kubernetes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h1 id="projects-heading">Projects</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h2 id="project1-title">Project 1</h2>
+                <p id="project1-date">Date: Jan 2023</p>
+                <p id="project1-description">A full-stack e-commerce application built using React and Node.js.</p>
+            </div>
+            <div class="project-card">
+                <h2 id="project2-title">Project 2</h2>
+                <p id="project2-date">Date: March 2023</p>
+                <p id="project2-description">A mobile app for managing tasks, built using React Native.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <h1 id="certifications-heading">Certifications & Awards</h1>
+        <ul id="certifications-list">
+            <li id="cert1">Google Cloud Architect - June 2023</li>
+            <li id="cert2">React Developer Certification - March 2023</li>
+            <li id="cert3">Best Hackathon Project - August 2022</li>
+        </ul>
+    </section>
+
+    <!-- Degrees Section -->
+    <section id="degrees" class="section">
+        <h1 id="degrees-heading">Degrees & Courses</h1>
+        <ul id="degrees-list">
+            <li id="degree1">Bachelor's Degree in Computer Science - XYZ University (2020-2024)</li>
+            <li id="degree2">Short Course: Advanced JavaScript - 2022</li>
+        </ul>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video-content" class="section">
+        <h1 id="video-heading">Video Content</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/c9WDEA9jtik" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h1 id="contact-heading">Contact</h1>
+        <p id="contact-email">Email: yourname@example.com</p>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/yourprofile"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
