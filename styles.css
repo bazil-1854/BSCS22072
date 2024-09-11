@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -212,43 +213,51 @@ ul.navlist {
 
 /* ==================== About section css code ============================ */
 .about {
+    margin-top: -75px;
+    padding: 0px 35px;
+    padding-top: 115px;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-    grid-template-rows: auto; /* Automatically size row */
-    gap: 1rem; /* Gap between columns */
+    grid-template-columns: 1fr 1fr;
+    /* Two equal-width columns */
+    grid-template-rows: auto;
+    /* Automatically size row */
+    gap: 1rem;
+    /* Gap between columns */
 }
-.about .about-img{
-    margin:auto;
+
+.about .about-img {
+    margin: auto;
 }
-  
-.about-content{
+
+.about-content {
     padding: 3rem 0;
 }
 
-.about-content h2{
+.about-content h2 {
     color: var(--main-color);
 }
 
-.about-content h3{
+.about-content h3 {
     font-size: 35px;
     line-height: 3rem;
     margin: .5rem 0;
 }
 
-.about-content p{
+.about-content p {
     color: var(--font-color);
 }
 
-.text-box p{
+.text-box p {
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.about-btn{
+.about-btn {
     margin: .8rem 0;
 }
 
-.about-btn button,.cvContent a{
+.about-btn button,
+.cvContent a {
     background: var(--gradient-white-bg2);
     padding: 10px 20px;
     border-radius: 5px;
@@ -256,27 +265,28 @@ ul.navlist {
     font-size: 1rem;
     font-weight: 500;
     color: #000;
-    box-shadow: rgba(60,64,67,0.3)0px 1px 2px 0,
-                  rgba(60,64,67,0.15)0px 2px 6px 2px;
+    box-shadow: rgba(60, 64, 67, 0.3)0px 1px 2px 0,
+        rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
     margin-right: .5rem;
     cursor: pointer;
     transition: all .3s ease;
 }
 
 
-.about-btn button.active{
+.about-btn button.active {
     background: var(--gradient-color-bg);
     color: #ffff;
 }
 
-.text-box{
+.text-box {
     margin: .8rem 0;
 }
-/* ================ skilss =================*/ 
+
+/* ================ skilss =================*/
 .section {
     padding: 4rem 2rem;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
 }
 
 .heading {
@@ -285,9 +295,9 @@ ul.navlist {
     color: #333;
 }
 
-.skills-grid {   
+.skills-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
     gap: 1.5rem;
     place-content: center;
@@ -332,12 +342,14 @@ ul.navlist {
     margin-top: 1rem;
     font-size: 1.2rem;
     color: #333;
-} 
+}
+
 @media (max-width: 1150px) {
     .skills-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
 @media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: 1fr 1fr;
@@ -347,53 +359,55 @@ ul.navlist {
 
 
 /* ==================== Services section css code ============================ */
-.services{
-    padding: 35px;
+.services {
+    margin-top: -75px;
+    padding: 0px 35px;
+    padding-top: 125px;
     position: relative;
 }
 
-.main-text{
+.main-text {
     width: 100%;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.main-text .heading{
+.main-text .heading {
     color: var(--main-color);
 }
 
-.main-text span{
+.main-text span {
     color: var(--font-color);
     font-weight: 200;
     text-transform: uppercase;
 }
 
-.allServices{
+.allServices {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px , auto));
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     align-items: center;
     gap: 2rem;
     position: relative;
     z-index: 1;
 }
 
-.servicesItem{
-    box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
-                  rgba(0,0,0,0.06)0px 1px 2px 0px;
+.servicesItem {
+    box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0,
+        rgba(0, 0, 0, 0.06)0px 1px 2px 0px;
     padding: 2rem 1rem;
     border-radius: 10px;
     background: var(--gradient-white-bg2);
     text-align: center;
 }
 
-.icon-services{
+.icon-services {
     display: inline-flex;
     position: relative;
 }
 
-.icon-services i{
-    box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
-                  rgba(0,0,0,0.06)0px 1px 2px 0px;
+.icon-services i {
+    box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0,
+        rgba(0, 0, 0, 0.06)0px 1px 2px 0px;
     padding: .5rem;
     border-radius: 50%;
     background: var(--gradient-color-bg);
@@ -408,12 +422,12 @@ ul.navlist {
     z-index: 1;
 }
 
-.servicesItem:hover i{
+.servicesItem:hover i {
     outline: 1px solid var(--main-color);
     transform: scale(1.2);
 }
 
-.icon-services span{
+.icon-services span {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -424,18 +438,81 @@ ul.navlist {
     animation: animate 1s linear infinite;
 }
 
-.servicesItem h3{
+.servicesItem h3 {
     margin: 1rem 0 0.5rem;
 }
 
-.servicesItem p{
+.servicesItem p {
     margin-bottom: 1.5rem;
     font-size: .9rem;
     color: #717171;
     font-weight: 600;
 }
  
+/* ==================== projects ============================ */
+.projects{
+    margin-top: -75px;
+    padding: 0px 35px;
+    padding-top: 125px;
+
+} 
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    gap: 1rem;
+}
+
+.project-img img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    transition: .3s;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.18)0px 2px 4px;
+    background-color: #fffdfa;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.project-content {
+    width: 100%;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+}
+
+.project-img {
+    width: 100%;
+    height: 55%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+.project-content a.readMore {
+    padding: 8px 12px;
+    font-size: .8rem;
+}
+
+.project-content p {
+    font-size: .9rem;
+    color: #757575;
+    font-weight: 600;
+    margin: .5rem 0 1rem 0;
+}
  
+
 /*======================= BrakPoints ============================ */
 
 @media(max-width:1200px) {
@@ -471,12 +548,12 @@ ul.navlist {
         width: 52vw;
     }
 
-    .portfolio-img img {
+    .project-img img {
         width: 100%;
         height: 100%;
     }
 
-    .portfolio-gallery {
+    .project-gallery {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 
@@ -586,14 +663,5 @@ ul.navlist {
     .about-btn button {
         padding: 10px 15px;
     }
-
-    .fillter-buttons {
-        display: grid;
-        grid-gap: 1rem;
-    }
-
-    .fillter-buttons button {
-        width: 100%;
-        padding: 13px;
-    }
+ 
 }
