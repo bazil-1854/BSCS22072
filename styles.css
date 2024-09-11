@@ -12,8 +12,7 @@
     --gradient-color-bg: linear-gradient(180deg, rgb(247, 104, 1)0%, rgb(216, 123, 0)51%, rgb(178, 43, 13)100%);
     --main-color: #e64900;
     --font-color: #90979f;
-    --hover-box-shadow: rgba(0, 0, 0, 0.19)0px 10px 20px,
-        rgba(0, 0, 0, 0.23)0px 6px 6px;
+    --hover-box-shadow: rgba(0, 0, 0, 0.19)0px 10px 20px, rgba(0, 0, 0, 0.23)0px 6px 6px;
     --gradient-white-bg2: linear-gradient(98deg, #e5eef7 0%, #fff 100%);
 }
 
@@ -49,6 +48,7 @@ header .logo {
 
 span {
     background: var(--gradient-color-bg);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -69,6 +69,7 @@ ul.navlist {
 .navlist li a:hover,
 .navlist li a.active {
     background: var(--gradient-color-bg);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -288,5 +289,87 @@ ul.navlist {
     .fillter-buttons button {
         width: 100%;
         padding: 13px;
+    }
+}
+
+/* home sectiom */
+/* General styles for the home section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 0 20px;
+}
+
+/* Content styles */
+.content {
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Styling the heading */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Highlighted name styling */
+h1 span {
+    color: #ff6347;
+    /* A vibrant color for your name */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    background-image: linear-gradient(45deg, #fbc093, #b86200);
+}
+
+/* Paragraph (description) styling */
+p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Social media icon container */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Social media icon styling */
+.social-icon {
+    display: inline-block;
+    font-size: 2rem;
+    color: #333;
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Hover effect for social media icons */
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #d46300;
+    /* Same color as the highlighted name */
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
     }
 }
