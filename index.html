@@ -70,14 +70,16 @@
     </header> -->
 
     <section class="home" id="home">
-        <div class="content">
-            <h1>Hi, I am <span>Bazil Suhail</span></h1>
-            <p>
-                I’m a passionate web developer specializing in crafting visually stunning and highly functional websites. 
-                With a focus on delivering seamless user experiences, I create responsive applications with a blend of 
+        <div class="home-content">
+            <div class="home-heading">
+                Hi, I am <span class="highlighted-name">Bazil Suhail</span>
+            </div>
+            <div class="home-description">
+                I am a passionate web developer specializing in crafting visually stunning and highly functional websites.
+                With a focus on delivering seamless user experiences, I create responsive applications with a blend of
                 modern design principles and powerful backend integrations. Let’s build something amazing together!
-            </p>
-            <div class="social-media">
+            </div>
+            <div class="home-social-media">
                 <a href="#" aria-label="Facebook" class="social-icon"><i class='bx bxl-facebook'></i></a>
                 <a href="#" aria-label="Twitter" class="social-icon"><i class='bx bxl-twitter'></i></a>
                 <a href="#" aria-label="LinkedIn" class="social-icon"><i class='bx bxl-linkedin'></i></a>
@@ -87,10 +89,73 @@
     </section>
     
     <!-- About Section -->
-    <section id="about" class="section">
-        <h1 id="about-heading">About Me</h1>
-        <p id="about-content">Welcome to my portfolio. I am a professional developer with expertise in full-stack web
-            development, project management, and software design.</p>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Assets/logo.png" alt="logo Not Found" class="aboutHero">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <p>Creative full-stack developer with a knack for innovation. Skilled in modern web technologies and eager
+                to learn encourages me to deliver efficient and scalable solutions.</p>
+            <div class="about-btn">
+                <button class="active">Technical Skills</button>
+                <button>Education</button>
+                <button>Languages </button>
+            </div>
+            <div class="content-btn">
+                <!-- Content for Technical Skills -->
+                <div class="content">
+                    <div class="text-box">
+                        <p>Full Stack Development</p>
+                        <span>Building scalable web applications from front-end to back-end.</span>
+                    </div>
+                    <div class="text-box">
+                        <p>UI/UX Design</p>
+                        <span>Creating intuitive and engaging user interfaces with user-centered design
+                            principles.</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Version Control & Collaboration</p>
+                        <span>Proficient in Git, GitHub, and working with cross-functional teams.</span>
+                    </div>
+                </div>
+
+                <!-- Content for Education -->
+                <div class="content" style="display: none;">
+                    <div class="text-box">
+                        <p>Bachelor's Degree in Computer Science</p>
+                        <span>ITU Punjab Lahore, 202 - Currently in Semester 4</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Intermediate in Computer Science</p>
+                        <span>Punjab group of Colleges Lahore - 2024</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Matriculation In Computer Science</p>
+                        <span>Junior Campus Hight School</span>
+                    </div>
+                </div>
+
+                <!-- Content for Languages -->
+                <div class="content" style="display: none;">
+                    <div class="text-box">
+                        <p><i class='bx bxl-html5'></i> HTML5 & CSS3</p>
+                        <span>Building modern, responsive, and cross-browser compatible websites.</span>
+                    </div>
+                    <div class="text-box">
+                        <p><i class='bx bxl-javascript'></i> JavaScript & React</p>
+                        <span>Proficient in dynamic client-side scripting and React for building interactive UIs.</span>
+                    </div>
+                    <div class="text-box">
+                        <p><i class='bx bxl-nodejs'></i> Node.js & Express</p>
+                        <span>Developing server-side applications and APIs with efficient, scalable solutions.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cvContent">
+                <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->

@@ -1,20 +1,35 @@
 // active hamburger menu 
 let menuIcon = document.querySelector(".menu-icon");
 let navlist = document.querySelector(".navlist")
-menuIcon.addEventListener("click",()=>{
+menuIcon.addEventListener("click", () => {
     menuIcon.classList.toggle("active");
     navlist.classList.toggle("active");
     document.body.classList.toggle("open");
 });
 
 // remove navlist
-navlist.addEventListener("click",()=>{
+navlist.addEventListener("click", () => {
     navlist.classList.remove("active");
     menuIcon.classList.remove("active");
     document.body.classList.remove("open");
 })
 
 
+// switch between about buttons 
+
+const buttons = document.querySelectorAll('.about-btn button');
+const contents = document.querySelectorAll('.content');
+
+buttons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    contents.forEach(content => content.style.display = 'none');
+    contents[index].style.display = 'block';
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+  });
+});
+
+ 
 // Translation data
 const translations = {
     en: {
@@ -228,8 +243,8 @@ function translatePage() {
     document.getElementById("soft-skills-list").innerHTML = translation.skills.softSkills.map(skill => `<li>${skill}</li>`).join('');
     document.getElementById("hard-skills-list").innerHTML = translation.skills.hardSkills.map(skill => `<li>${skill}</li>`).join('');
 
-    
-    document.getElementById("technical-skills-heading").textContent = translation.skills.softSkillsHeading;  
+
+    document.getElementById("technical-skills-heading").textContent = translation.skills.softSkillsHeading;
     document.getElementById("technical-skills-list").innerHTML = translation.skills.hardSkills.map(skill => `<li>${skill}</li>`).join('');
 
     // Projects section
