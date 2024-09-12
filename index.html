@@ -314,8 +314,10 @@
 
     <!-- Coursework Section -->
     <section class="section coursework-section">
-        <h1 class="coursework-heading">Coursework</h1>
-
+        
+        <div class="main-text">
+            <h2 class="heading">Course Work</h2>
+        </div>
         <div class="coursework-grid">
 
             <div class="course-item">
@@ -376,7 +378,7 @@
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="main-text">
-            <h2 class="heading">My Projects</h2>
+            <h2 class="heading">Projects Video Content</h2>
         </div>
         <div class="project-gallery">
             <div class="video-content">
@@ -403,17 +405,46 @@
         </div>
     </section>
 
+ 
+    <!-- Contact Form Section -->
+<section class="contact-section">
+    <h1 class="contact-heading">Get in Touch</h1>
+    <div class="contact-form-container">
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="contact-button">Send Message</button>
+        </form>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h1 id="contact-heading">Contact</h1>
-        <p id="contact-email">Email: yourname@example.com</p>
-        <div class="social-media">
-            <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
-            <a href="https://github.com/yourprofile"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i></a>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <p class="footer-name">Bazil Suhail</p>
+            <p class="footer-email"><a href="mailto:your.email@example.com">bazil1854@gmail.com</a></p>
         </div>
-    </section>
+        <div class="footer-right">
+            <a href="https://www.youtube.com" aria-label="YouTube" class="social-icon bx bxl-youtube"></a>
+            <a href="https://www.linkedin.com" aria-label="LinkedIn" class="social-icon bx bxl-linkedin"></a>
+            <a href="https://www.instagram.com" aria-label="Instagram" class="social-icon bx bxl-instagram"></a>
+            <a href="https://github.com" aria-label="GitHub" class="social-icon bx bxl-github"></a>
+        </div>
+    </div>
+</footer>
+
+
 
     <script src="index.js"></script>
 </body>
