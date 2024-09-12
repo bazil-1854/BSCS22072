@@ -14,7 +14,7 @@
 
 <body>
 
-    <header>
+    <header class="navbar">
         <a href="#" class="logo"><span>B</span>azil</a>
         <ul class="navlist">
             <li><a href="#about" class="active">About</a></li>
@@ -39,35 +39,6 @@
         </div>
     </header>
 
-    <!-- Navigation Bar
- <div class="right-header">
-            <a href="#" class="btn">Let's chat <i class='bx bx-message-dots'></i></a>
-            <div class="menu-icon">
-                <div class="bar"></div>
-            </div>
-        </div>
-
-    <header class="header"> 
-        <div class="logo"><a href="#" id="nav-logo">MyPortfolio</a></div> 
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#about" id="nav-about">About</a>
-            <a href="#skills" id="nav-skills">Skills</a>
-            <a href="#projects" id="nav-projects">Projects</a>
-            <a href="#certifications" id="nav-certifications">Certifications</a>
-            <a href="#degrees" id="nav-degrees">Degrees</a>
-            <a href="#contact" id="nav-contact">Contact</a>
-            <div>
-                <select id="language-selector" onchange="translatePage()">
-                    <option value="en">English</option>
-                    <option value="ar">العربية</option>
-                    <option value="ur">Urdu</option>
-                    <option value="fr">French</option>
-                </select>
-            </div>
-        </nav>
-
-    </header> -->
 
     <section class="home" id="home">
         <div class="home-content">
@@ -257,92 +228,151 @@
         <div class="main-text">
             <h2 class="heading">My Projects</h2>
         </div>
-
         <div class="project-gallery">
             <div class="project-box mix uiux">
                 <div class="project-content">
-                    <h3>ChessTacTix</h3>
+                    <div class="project-name-img">
+                        <div class="project-img">
+                            <img src="Assets/chessIcon.jpg" alt="">
+                        </div>
+                        <h3 class="project-name">ChessTacTix</h3>
+                    </div>
+
                     <p>Chess Tactix is a two-player chess game developed in C++ using the SFML (Simple and Fast
                         Multimedia Library). It features all the standard chess moves.</p>
-                    <a href="#" class="readMore">Explore More</a>
+
+                    <a href="#" class="view-project">View Project</a>
                 </div>
-                <div class="project-img">
-                    <img src="Assets/chess.jpg" alt="">
-                </div>
+
+
             </div>
 
             <div class="project-box mix web">
                 <div class="project-content">
-                    <h3>Cobra Quest</h3>
-                    <p>CobraQuest is an engaging snake game with multiple difficulty levels and a multiplayer mode.It offers a dynamic and challenging experience for both solo players
+                    <div class="project-name-img">
+                        <div class="project-img">
+                            <img src="Assets/cobraIcon.jpg" alt="">
+                        </div>
+                        <h3 class="project-name">Cobra Quest</h3>
+                    </div>
+                    <p>CobraQuest is an engaging snake game with multiple difficulty levels and a multiplayer mode.It
+                        offers a dynamic and challenging experience for both solo players
                         and friends.</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="project-img">
-                    <img src="Assets/cobra.jpg" alt="">
+
+                    <a href="#" class="view-project">View Project</a>
                 </div>
             </div>
 
             <div class="project-box mix web">
                 <div class="project-content">
-                    <h3>PixelPaint</h3>
-                    <p>Paint Master is an advanced MS Paint clone developed in Python using the Tkinter library. It
-                        provides a rich set of tools for creating and editing digital drawings.</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="project-img">
-                    <img src="Assets/paint.jpg" alt="">
-                </div>
-            </div>
-
-
-            <div class="project-box mix web">
-                <div class="project-content">
-                    <h3>TetroMania</h3>
-                    <p>TetroMania is a classic Tetris game implemented in C++ using SFML. It features four distinct levels, each with increasing complexity and unique
-                        obstacles.</p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="project-img">
-                    <img src="Assets/tetris.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="project-box mix uiux">
-                <div class="project-content">
-                    <h3>FlexiBase</h3>
+                    <div class="project-name-img">
+                        <div class="project-img">
+                            <img src="Assets/flexibaseIcon.jpg" alt="">
+                        </div>
+                        <h3 class="project-name">FlexiBase</h3>
+                    </div>
                     <p>FlexiBase is a lightweight database system inspired by MongoDB, implemented using Data Structures
                         and Algorithms (DSA) core concepts. It supports basic CRUD
-                        operations and efficient data searching. </p>
-                    <a href="#" class="readMore">Explore More</a>
-                </div>
-                <div class="project-img">
-                    <img src="Assets/flexibase.jpg" alt="">
+                        operations and efficient data searching.</p>
+
+                    <a href="#" class="view-project">View Project</a>
                 </div>
             </div>
+
+            <div class="project-box mix web">
+                <div class="project-content">
+                    <div class="project-name-img">
+                        <div class="project-img">
+                            <img src="Assets/tetrisIcon.jpg" alt="">
+                        </div>
+                        <h3 class="project-name">TetroMania</h3>
+                    </div>
+                    <p>TetroMania is a classic Tetris game implemented in C++ using SFML. It features four distinct
+                        levels, each with increasing complexity and unique
+                        obstacles.</p>
+
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-box mix web">
+                <div class="project-content">
+                    <div class="project-name-img">
+                        <div class="project-img">
+                            <img src="Assets/paintIcon.jpg" alt="">
+                        </div>
+                        <h3 class="project-name">PixelPaint</h3>
+                    </div>
+                    <p>Paint Master is an advanced MS Paint clone developed in Python using the Tkinter library. It
+                        provides a rich set of tools for creating and editing digital drawings.</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+
         </div>
-
-    </section> 
- 
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-        <h1 id="certifications-heading">Certifications & Awards</h1>
-        <ul id="certifications-list">
-            <li id="cert1">Google Cloud Architect - June 2023</li>
-            <li id="cert2">React Developer Certification - March 2023</li>
-            <li id="cert3">Best Hackathon Project - August 2022</li>
-        </ul>
     </section>
 
-    <!-- Degrees Section -->
-    <section id="degrees" class="section">
-        <h1 id="degrees-heading">Degrees & Courses</h1>
-        <ul id="degrees-list">
-            <li id="degree1">Bachelor's Degree in Computer Science - XYZ University (2020-2024)</li>
-            <li id="degree2">Short Course: Advanced JavaScript - 2022</li>
-        </ul>
+    <!-- Coursework Section -->
+    <section class="section coursework-section">
+        <h1 class="coursework-heading">Coursework</h1>
+
+        <div class="coursework-grid">
+            
+            <div class="course-item"> 
+                <i class='bx bx-objects-vertical-center course-icon' ></i>
+                <div class="course-info">
+                    <h2>Object-Oriented Programming</h2>
+                    <p>Learned OOP concepts such as inheritance, polymorphism, and encapsulation.</p>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <i class='bx bxs-building course-icon'></i>
+                <div class="course-info">
+                    <h2>Data Structures & Algorithms</h2>
+                    <p>Focused on sorting, searching algorithms and their complexity.</p>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <i class='bx bxs-network-chart course-icon'></i>
+                <div class="course-info">
+                    <h2>Data Analysis and Algorithms</h2>
+                    <p>Gained proficiency in advanced data analysis techniques, data visualization, and pattern recognition.</p>
+                    
+                </div>
+            </div>
+
+            <div class="course-item">
+                <i class='bx bxs-data course-icon'></i>
+                <div class="course-info">
+                    <h2>Database Management Systems</h2>
+                    <p>Focused on SQL, NoSQL, and efficient database designs.</p>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <i class='bx bx-barcode-reader course-icon' ></i>
+                <div class="course-info">
+                    <h2>Computer Organization and Architecture</h2>
+                    <p>Studied fundamental principles of computer organization such as CPU design, memory hierarchy, and instruction sets.</p>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <i class='bx bx-math course-icon' ></i>
+                <div class="course-info">
+                    <h2>Linear Algebra</h2>
+                    <p>Explored key concepts like including vector spaces, matrices, and linear transformations. Focused on solving systems of linear equations.</p>
+                </div>
+            </div>
+
+
+          
+            
+        </div>
     </section>
+
 
     <!-- Video Section -->
     <section id="video-content" class="section">
