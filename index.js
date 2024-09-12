@@ -124,8 +124,84 @@ function populateProjects() {
     });
 }
 
+// courswork 
+const courses = [
+    {
+        title: "Object-Oriented Programming",
+        description: "Learned OOP concepts such as inheritance, polymorphism, and encapsulation.",
+        iconClass: "bx bx-objects-vertical-center"
+    },
+    {
+        title: "Data Structures & Algorithms",
+        description: "Focused on sorting, searching algorithms and their complexity.",
+        iconClass: "bx bxs-building"
+    },
+    {
+        title: "Data Analysis and Algorithms",
+        description: "Gained proficiency in advanced data analysis techniques, data visualization, and pattern recognition.",
+        iconClass: "bx bxs-network-chart"
+    },
+    {
+        title: "Database Management Systems",
+        description: "Focused on SQL, NoSQL, and efficient database designs.",
+        iconClass: "bx bxs-data"
+    },
+    {
+        title: "Computer Organization and Architecture",
+        description: "Studied fundamental principles of computer organization such as CPU design, memory hierarchy, and instruction sets.",
+        iconClass: "bx bx-barcode-reader"
+    },
+    {
+        title: "Linear Algebra",
+        description: "Explored key concepts including vector spaces, matrices, and linear transformations. Focused on solving systems of linear equations.",
+        iconClass: "bx bx-math"
+    }
+];
+
+function populateCourses() {
+    const courseworkGrid = document.querySelector('.coursework-grid');
+
+    courses.forEach(course => {
+        // Create course item element
+        const courseItem = document.createElement('div');
+        courseItem.className = 'course-item';
+
+        // Create icon element
+        const icon = document.createElement('i');
+        icon.className = `course-icon ${course.iconClass}`;
+        courseItem.appendChild(icon);
+
+        // Create course info element
+        const courseInfo = document.createElement('div');
+        courseInfo.className = 'course-info';
+
+        // Create course title element
+        const courseTitle = document.createElement('h2');
+        courseTitle.textContent = course.title;
+
+        // Create course description element
+        const courseDescription = document.createElement('p');
+        courseDescription.textContent = course.description;
+
+        // Append title and description to courseInfo
+        courseInfo.appendChild(courseTitle);
+        courseInfo.appendChild(courseDescription);
+
+        // Append courseInfo to courseItem
+        courseItem.appendChild(courseInfo);
+
+        // Append courseItem to courseworkGrid
+        courseworkGrid.appendChild(courseItem);
+    });
+}
+
+// Call the function to populate courses when the page loads
+
 // Call the function to populate projects when the page loads
-window.onload = populateProjects;
+window.onload = function() {
+    populateProjects();
+    populateCourses();
+};
 
 
 // Translation data
