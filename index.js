@@ -30,6 +30,104 @@ buttons.forEach((button, index) => {
 });
 
  
+
+const projects = [
+    {
+        name: "ChessTacTix",
+        description: "Chess Tactix is a two-player chess game developed in C++ using the SFML (Simple and Fast Multimedia Library). It features all the standard chess moves.",
+        image: "Assets/chessIcon.jpg",
+        link: "#",
+        category: "uiux"
+    },
+    {
+        name: "Cobra Quest",
+        description: "CobraQuest is an engaging snake game with multiple difficulty levels and a multiplayer mode. It offers a dynamic and challenging experience for both solo players and friends.",
+        image: "Assets/cobraIcon.jpg",
+        link: "#",
+        category: "web"
+    },
+    {
+        name: "FlexiBase",
+        description: "FlexiBase is a lightweight database system inspired by MongoDB, implemented using Data Structures and Algorithms (DSA) core concepts. It supports basic CRUD operations and efficient data searching.",
+        image: "Assets/flexibaseIcon.jpg",
+        link: "#",
+        category: "web"
+    },
+    {
+        name: "TetroMania",
+        description: "TetroMania is a classic Tetris game implemented in C++ using SFML. It features four distinct levels, each with increasing complexity and unique obstacles.",
+        image: "Assets/tetrisIcon.jpg",
+        link: "#",
+        category: "web"
+    },
+    {
+        name: "PixelPaint",
+        description: "Paint Master is an advanced MS Paint clone developed in Python using the Tkinter library. It provides a rich set of tools for creating and editing digital drawings.",
+        image: "Assets/paintIcon.jpg",
+        link: "#",
+        category: "web"
+    }
+];
+function populateProjects() {
+    const projectGallery = document.querySelector('.project-gallery');
+
+    projects.forEach(project => {
+        // Create project box element
+        const projectBox = document.createElement('div');
+        projectBox.className = `project-box mix ${project.category}`;
+
+        // Create project content element
+        const projectContent = document.createElement('div');
+        projectContent.className = 'project-content';
+
+        // Create project name and image element
+        const projectNameImg = document.createElement('div');
+        projectNameImg.className = 'project-name-img';
+
+        // Create project image element
+        const projectImg = document.createElement('div');
+        projectImg.className = 'project-img';
+        const img = document.createElement('img');
+        img.src = project.image;
+        img.alt = '';
+        projectImg.appendChild(img);
+
+        // Create project name element
+        const projectName = document.createElement('h3');
+        projectName.className = 'project-name';
+        projectName.textContent = project.name;
+
+        // Append image and name to projectNameImg
+        projectNameImg.appendChild(projectImg);
+        projectNameImg.appendChild(projectName);
+
+        // Create project description element
+        const description = document.createElement('p');
+        description.textContent = project.description;
+
+        // Create view project link
+        const viewProjectLink = document.createElement('a');
+        viewProjectLink.href = project.link;
+        viewProjectLink.className = 'view-project';
+        viewProjectLink.textContent = 'View Project';
+
+        // Append all elements to projectContent
+        projectContent.appendChild(projectNameImg);
+        projectContent.appendChild(description);
+        projectContent.appendChild(viewProjectLink);
+
+        // Append projectContent to projectBox
+        projectBox.appendChild(projectContent);
+
+        // Append projectBox to projectGallery
+        projectGallery.appendChild(projectBox);
+    });
+}
+
+// Call the function to populate projects when the page loads
+window.onload = populateProjects;
+
+
 // Translation data
 const translations = {
     en: {
