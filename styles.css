@@ -8,6 +8,20 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #fdfdfd; /* Light gray track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 111, 0); /* Orange scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+    border: 3px solid #fdfdfd; /* Adds some space around the thumb */
+}
+
 :root {
     --bg-color: #f5f5f5;
     --gradient-white-bg: linear-gradient(0deg, #fff 0%, #edf4fa 51%, #e5eef7 100%);
@@ -15,6 +29,14 @@
     --main-color: #e64900;
     --font-color: #90979f;
     --hover-box-shadow: rgba(0, 0, 0, 0.19)0px 10px 20px, rgba(0, 0, 0, 0.23)0px 6px 6px;
+}
+
+.line {
+    background-color: rgb(255, 136, 0);
+    height: 4px;
+    width: 55vw;
+    margin: 0px auto;
+    margin-bottom: 25px;
 }
 
 a {
@@ -139,8 +161,30 @@ ul.navlist {
     justify-content: center;
     height: 100vh;
     background: radial-gradient(circle, rgba(255, 89, 0, 0.06) 4%, #f5f5f5 100%);
-
     padding: 0 20px;
+}
+
+.animatedText {
+    background: linear-gradient(90deg, #ad3400, #ffae44, #b16416);
+    background-size: 300%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradientShift 8s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
 }
 
 .home-content {
@@ -149,7 +193,7 @@ ul.navlist {
 }
 
 .home-heading {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
     margin-bottom: 10px;
     color: #333;
@@ -216,7 +260,7 @@ ul.navlist {
     margin-bottom: 65px;
 }
 
-.about .about-img {
+.about-img {
     margin: auto;
 }
 
@@ -247,8 +291,7 @@ ul.navlist {
     margin: .8rem 0;
 }
 
-.about-btn button,
-.cvContent a {
+.about-btn button {
     background: linear-gradient(98deg, #f7ebe5 0%, #fff 100%);
     padding: 10px 20px;
     border-radius: 5px;
@@ -261,6 +304,20 @@ ul.navlist {
     cursor: pointer;
     transition: all .3s ease;
 }
+
+.cvContent a {
+    margin-top: 35px;
+    background: linear-gradient(98deg, #f7ebe5 0%, #fff 100%);
+    padding: 8px 20px;
+    border-radius: 5px; 
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    box-shadow: rgba(60, 64, 67, 0.3)0px 1px 2px 0, rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+    margin-right: .5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+} 
 
 .about-btn button.active {
     background: var(--gradient-color-bg);
@@ -281,7 +338,6 @@ ul.navlist {
 
 .heading {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
     color: #333;
 }
 
@@ -353,7 +409,7 @@ ul.navlist {
     margin-top: -75px;
     padding: 0px 35px;
     padding-top: 125px;
-    margin-bottom: 65px;
+    margin-bottom: 45px;
 }
 
 .main-text {
@@ -368,14 +424,15 @@ ul.navlist {
 }
 
 .heading-span {
-    font-weight: 400;
-    margin-top: -25px;
+    font-weight: 500;
     color: #6f6f6f;
     text-transform: uppercase;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .allServices {
+    transform: scale(0.95);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     align-items: center;
@@ -385,10 +442,15 @@ ul.navlist {
 }
 
 .servicesItem {
-    box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0, rgba(0, 0, 0, 0.06)0px 1px 2px 0px;
     padding: 2rem 1rem;
     border-radius: 10px;
-    background: linear-gradient(98deg, #ffe8cf 0%, #fff3eb 100%);
+    /*background: linear-gradient(98deg, hsl(31, 100%, 79%), #ff9d5c );
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-left: 6px rgb(255, 119, 0) solid;
+    border-right: 6px rgb(255, 119, 0) solid;
+    */
+
     text-align: center;
 }
 
@@ -398,8 +460,7 @@ ul.navlist {
 }
 
 .icon-services i {
-    box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0,
-        rgba(0, 0, 0, 0.06)0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0, rgba(0, 0, 0, 0.06)0px 1px 2px 0px;
     padding: .5rem;
     border-radius: 50%;
     background: var(--gradient-color-bg);
@@ -538,7 +599,7 @@ ul.navlist {
 }
 
 /*  =================== course work   =======================*/
-.section {
+.coursework-section {
     margin-top: -75px;
     padding: 0px 35px;
     padding: 40px 20px;
@@ -553,13 +614,17 @@ ul.navlist {
     color: #333;
     font-family: 'Roboto', sans-serif;
 }
+.coursework-line{
+    height: 15px;
+}
 
 .coursework-grid {
+    transform: scale(1.05);
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin:  25px auto ; 
 }
 
 @media (min-width: 768px) {
@@ -829,6 +894,10 @@ ul.navlist {
     footer {
         padding-left: 3%;
         padding-right: 3%;
+    }
+
+    .allServices {
+        transform: scale(1);
     }
 
     .home,
