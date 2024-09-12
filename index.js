@@ -30,7 +30,7 @@ buttons.forEach((button, index) => {
 });
 
  
-
+// project object 
 const projects = [
     {
         name: "ChessTacTix",
@@ -72,19 +72,19 @@ function populateProjects() {
     const projectGallery = document.querySelector('.project-gallery');
 
     projects.forEach(project => {
-        // Create project box element
+        
         const projectBox = document.createElement('div');
         projectBox.className = `project-box mix ${project.category}`;
 
-        // Create project content element
+        
         const projectContent = document.createElement('div');
         projectContent.className = 'project-content';
 
-        // Create project name and image element
+        
         const projectNameImg = document.createElement('div');
         projectNameImg.className = 'project-name-img';
 
-        // Create project image element
+        
         const projectImg = document.createElement('div');
         projectImg.className = 'project-img';
         const img = document.createElement('img');
@@ -92,34 +92,34 @@ function populateProjects() {
         img.alt = '';
         projectImg.appendChild(img);
 
-        // Create project name element
+        
         const projectName = document.createElement('h3');
         projectName.className = 'project-name';
         projectName.textContent = project.name;
 
-        // Append image and name to projectNameImg
+        
         projectNameImg.appendChild(projectImg);
         projectNameImg.appendChild(projectName);
 
-        // Create project description element
+        
         const description = document.createElement('p');
         description.textContent = project.description;
 
-        // Create view project link
+        
         const viewProjectLink = document.createElement('a');
         viewProjectLink.href = project.link;
         viewProjectLink.className = 'view-project';
         viewProjectLink.textContent = 'View Project';
 
-        // Append all elements to projectContent
+        
         projectContent.appendChild(projectNameImg);
         projectContent.appendChild(description);
         projectContent.appendChild(viewProjectLink);
 
-        // Append projectContent to projectBox
+        
         projectBox.appendChild(projectContent);
 
-        // Append projectBox to projectGallery
+        
         projectGallery.appendChild(projectBox);
     });
 }
@@ -162,43 +162,104 @@ function populateCourses() {
     const courseworkGrid = document.querySelector('.coursework-grid');
 
     courses.forEach(course => {
-        // Create course item element
+        
         const courseItem = document.createElement('div');
         courseItem.className = 'course-item';
 
-        // Create icon element
+        
         const icon = document.createElement('i');
         icon.className = `course-icon ${course.iconClass}`;
         courseItem.appendChild(icon);
 
-        // Create course info element
+        
         const courseInfo = document.createElement('div');
         courseInfo.className = 'course-info';
 
-        // Create course title element
+        
         const courseTitle = document.createElement('h2');
         courseTitle.textContent = course.title;
 
-        // Create course description element
+        
         const courseDescription = document.createElement('p');
         courseDescription.textContent = course.description;
 
-        // Append title and description to courseInfo
+        
         courseInfo.appendChild(courseTitle);
         courseInfo.appendChild(courseDescription);
 
-        // Append courseInfo to courseItem
+        
         courseItem.appendChild(courseInfo);
 
-        // Append courseItem to courseworkGrid
+        
         courseworkGrid.appendChild(courseItem);
     });
 }
 
-// Call the function to populate courses when the page loads
+const services = [
+    {
+        title: "Web Development",
+        description: "Crafting responsive, scalable, and dynamic websites that drive engagement and elevate your brand.",
+        iconClass: "bx bx-layer"
+    },
+    {
+        title: "Desktop Development",
+        description: "Developing robust desktop applications tailored to your business needs, ensuring seamless functionality.",
+        iconClass: "bx bx-code-alt"
+    },
+    {
+        title: "Mobile App Development",
+        description: "Designing user-friendly mobile applications that provide exceptional experiences on all devices.",
+        iconClass: "bx bxs-party"
+    },
+    {
+        title: "UI / UX Design",
+        description: "Creating intuitive and visually appealing designs to ensure a seamless and engaging user journey.",
+        iconClass: "bx bx-desktop"
+    }
+];
 
-// Call the function to populate projects when the page loads
+function populateServices() {
+    const allServices = document.querySelector('.allServices');
+
+    services.forEach(service => {
+        
+        const serviceItem = document.createElement('div');
+        serviceItem.className = 'servicesItem';
+ 
+        const iconServices = document.createElement('div');
+        iconServices.className = 'icon-services';
+        const icon = document.createElement('i');
+        icon.className = service.iconClass;
+        iconServices.appendChild(icon);
+        iconServices.appendChild(document.createElement('span'));
+ 
+        const serviceInfo = document.createElement('div');
+        serviceInfo.className = 'service-info';
+
+        
+        const serviceTitle = document.createElement('h3');
+        serviceTitle.textContent = service.title;
+
+        
+        const serviceDescription = document.createElement('p');
+        serviceDescription.textContent = service.description;
+
+        
+        serviceInfo.appendChild(serviceTitle);
+        serviceInfo.appendChild(serviceDescription);
+
+        
+        serviceItem.appendChild(iconServices);
+        serviceItem.appendChild(serviceInfo);
+
+        
+        allServices.appendChild(serviceItem);
+    });
+}
+ 
+ 
 window.onload = function() {
+    populateServices();
     populateProjects();
     populateCourses();
 };
