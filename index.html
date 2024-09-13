@@ -6,48 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A professional portfolio showcasing skills, projects, certifications, and more.">
     <meta name="keywords" content="Portfolio, Web Development, Projects, Certifications, Hackathons, Skills">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Bazil Suhail">
     <title>Bazil Suhail</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!-- Navigation Bar --> 
-    <header class="header"> 
-        <div class="logo"><a href="#" id="nav-logo">Bazil Suhail</a></div> 
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#about" id="nav-about">About</a>
-            <a href="#skills" id="nav-skills">Skills</a>
-            <a href="#projects" id="nav-projects">Projects</a>
-            <a href="#certifications" id="nav-certifications">Certifications</a>
-            <a href="#degrees" id="nav-degrees">Degrees</a>
-            <a href="#contact" id="nav-contact">Contact</a>
-            <div>
-                <select id="language-selector" onchange="translatePage()">
-                    <option value="en">English</option>
-                    <option value="ar">العربية</option>
-                    <option value="ur">Urdu</option>
-                    <option value="fr">French</option>
-                </select>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#" class="logo"><span>B</span>azil</a>
+        <ul class="navlist">
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+
+        <div class="right-header">
+            <select class="btn" id="language-selector" onchange="translatePage()">
+                <option class="btn" value="en">English</option>
+                <option class="btn" value="ar">العربية</option>
+                <option class="btn" value="ur">Urdu</option>
+                <option class="btn" value="fr">French</option>
+            </select>
+            <div class="menu-icon">
+                <div class="bar"></div>
             </div>
-        </nav>
-
+        </div>
     </header>
-
     <section class="home" id="home">
         <div class="content">
-          <h1>Hi, I am <span>Bazil Suhail</span></h1>
-          <p>Building seamless, responsive and user-oriented web application from front to back.</p>
-          <div class="social-media">
-            <a href="#" aria-label="Facebook" class="social-icon"><i class='bx bxl-facebook'></i></a>
-            <a href="#" aria-label="Twitter" class="social-icon"><i class='bx bxl-twitter'></i></a>
-            <a href="#" aria-label="LinkedIn" class="social-icon"><i class='bx bxl-linkedin'></i></a>
-            <a href="#" aria-label="Instagram" class="social-icon"><i class='bx bxl-instagram'></i></a>
-          </div>
+            <h1>Hi, I am <span>Bazil Suhail</span></h1>
+            <p>Building seamless, responsive and user-oriented web application from front to back.</p>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook" class="social-icon"><i class='bx bxl-facebook'></i></a>
+                <a href="#" aria-label="Twitter" class="social-icon"><i class='bx bxl-twitter'></i></a>
+                <a href="#" aria-label="LinkedIn" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" aria-label="Instagram" class="social-icon"><i class='bx bxl-instagram'></i></a>
+            </div>
         </div>
-      </section>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="section">
@@ -92,7 +94,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <!-- Projects Section -->
     <section id="projects" class="section">
