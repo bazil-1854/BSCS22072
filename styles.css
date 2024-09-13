@@ -29,7 +29,20 @@
     --main-color: #e64900;
     --font-color: #90979f;
     --hover-box-shadow: rgba(0, 0, 0, 0.19)0px 10px 20px, rgba(0, 0, 0, 0.23)0px 6px 6px;
-}
+} 
+@keyframes animateprofile {
+    0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  
+    50% {
+      border-radius: 30% 60% 30% 40%/50% 60% 30% 60%;
+    }
+  
+    100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  }
 
 .line {
     background-color: rgb(255, 136, 0);
@@ -113,6 +126,11 @@ ul.navlist {
     margin-top: 16px;
     font-weight: 500;
     transition: all .3s ease;
+}
+
+.btn-option{
+    background-color: #cc6d00;
+    color: #ffffff;
 }
 
 .btn:hover,
@@ -222,25 +240,29 @@ ul.navlist {
     margin-top: 20px;
 }
 
-.social-icon {
-    display: inline-block;
-    font-size: 2rem;
-    color: #333;
+.social-icons { 
+    font-size: 25px;
+    color: #fff3e9;
+    background-color: #d46300;
+    border-radius: 50%;
+    padding: 4px 14px;
+    padding-top: 9px;
     transition: transform 0.3s, color 0.3s;
 }
+ 
 
-.social-icon:hover {
+.social-icons:hover {
     transform: scale(1.2);
-    color: #d46300;
+    color: rgb(255, 200, 152);
 }
 
 @media (max-width: 768px) {
     .home-heading {
-        font-size: 2.5rem;
+        font-size: 52px;
     }
 
     .home-description {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     .social-icon {
@@ -262,6 +284,9 @@ ul.navlist {
 
 .about-img {
     margin: auto;
+    overflow: hidden; 
+    border: 5px rgb(231, 85, 0) solid;
+    animation: animateprofile 5s ease-in-out infinite;
 }
 
 .about-content {
