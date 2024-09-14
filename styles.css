@@ -626,6 +626,23 @@ ul.navlist {
 }
 
 
+/*  ================     Trailer seciton        =======================*/
+
+.video-content {
+    width: 100%;
+    height: 250px;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+}
+
+.video-content iframe {
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    border: none;
+    /* Remove the border */
+}
+
 /*======================= BrakPoints ============================ */
 
 @media(max-width:1200px) {
