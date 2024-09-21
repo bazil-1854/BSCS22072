@@ -33,6 +33,42 @@ buttons.forEach((button, index) => {
     });
 });
 
+// skills
+const skills = [
+    { name: "JavaScript", iconClass: "bx bxl-javascript" },
+    { name: "React", iconClass: "bx bxl-react" },
+    { name: "Node.js", iconClass: "bx bxl-nodejs" },
+    { name: "Python", iconClass: "bx bxl-python" },
+    { name: "My SQL", iconClass: "bx bx-data" },
+    { name: "Git & GitHub", iconClass: "bx bxl-git" }
+];
+
+function populateSkills() {
+    const skillsGrid = document.querySelector('.skills-grid');
+
+    skills.forEach(skill => {
+        const skillCard = document.createElement('div');
+        skillCard.classList.add('card', 'skill-card');
+
+        const iconContainer = document.createElement('div');
+        iconContainer.classList.add('icon-container');
+
+        const icon = document.createElement('i');
+        icon.className = skill.iconClass + ' skill-icon';
+
+        const skillName = document.createElement('h3');
+        skillName.textContent = skill.name;
+
+        iconContainer.appendChild(icon);
+        skillCard.appendChild(iconContainer);
+        skillCard.appendChild(skillName);
+
+        skillsGrid.appendChild(skillCard);
+    });
+}
+
+
+
 // courswork 
 const CourseWork = [
     {
@@ -267,6 +303,7 @@ function populateVideos() {
 }
 
 window.onload = function () {
+    populateSkills();
     populateCourses();
     populateServices();
     populateProjects();
