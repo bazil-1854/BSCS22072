@@ -14,7 +14,7 @@ navLinks.forEach(link => {
         this.classList.add("active");
     });
 });
- 
+
 navlist.addEventListener("click", () => {
     navlist.classList.remove("active");
     menuIcon.classList.remove("active");
@@ -95,7 +95,7 @@ function populateCourses() {
         courseworkGrid.appendChild(courseItem);
     });
 }
- 
+
 const services = [
     {
         title: "Web Development",
@@ -117,7 +117,7 @@ const services = [
         description: "Creating intuitive and visually appealing designs to ensure a seamless and engaging user journey.",
         iconClass: "bx bx-desktop"
     }
-]; 
+];
 
 function populateServices() {
     const allServices = document.querySelector('.allServices');
@@ -154,7 +154,7 @@ function populateServices() {
         allServices.appendChild(serviceItem);
     });
 }
- 
+
 // project object 
 const projects = [
     {
@@ -241,10 +241,35 @@ function populateProjects() {
         projectGallery.appendChild(projectBox);
     });
 }
+const videoLinks = [
+    { src: "https://www.youtube.com/embed/3XhKu9YnS3o" },
+    { src: "https://www.youtube.com/embed/oLvk7NzsmxY" },
+    { src: "https://www.youtube.com/embed/Sj-DQWourYk" },
+    { src: "https://www.youtube.com/embed/Q1Gpnd9hhuI" },
+    { src: "https://www.youtube.com/embed/dEuobtAqfBI" }
+];
+
+function populateVideos() {
+    const gallery = document.querySelector('.project-video-gallery');
+    videoLinks.forEach(video => {
+        const videoContent = document.createElement('div');
+        videoContent.classList.add('video-content');
+
+        const iframe = document.createElement('iframe');
+        iframe.src = video.src;
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allow', 'autoplay; encrypted-media');
+        iframe.setAttribute('allowfullscreen', true);
+
+        videoContent.appendChild(iframe);
+        gallery.appendChild(videoContent);
+    });
+}
 
 window.onload = function () {
-    populateCourses(); 
+    populateCourses();
     populateServices();
     populateProjects();
+    populateVideos()
 };
- 
+

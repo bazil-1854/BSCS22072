@@ -458,6 +458,14 @@ ul.navlist {
     gap: 2rem 1rem;
 
 }
+.project-video-gallery {
+    transform: scale(0.95);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    gap: 2rem 1rem;
+
+}
+
 
 .project-name-img {
     display: flex;
