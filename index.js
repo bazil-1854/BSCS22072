@@ -99,11 +99,68 @@ function populateCourses() {
 }
  
 
+const services = [
+    {
+        title: "Web Development",
+        description: "Crafting responsive, scalable, and dynamic websites that drive engagement and elevate your brand.",
+        iconClass: "bx bx-layer"
+    },
+    {
+        title: "Desktop Development",
+        description: "Developing robust desktop applications tailored to your business needs, ensuring seamless functionality.",
+        iconClass: "bx bx-code-alt"
+    },
+    {
+        title: "Mobile App Development",
+        description: "Designing user-friendly mobile applications that provide exceptional experiences on all devices.",
+        iconClass: "bx bxs-party"
+    },
+    {
+        title: "UI / UX Design",
+        description: "Creating intuitive and visually appealing designs to ensure a seamless and engaging user journey.",
+        iconClass: "bx bx-desktop"
+    }
+]; 
+
+function populateServices() {
+    const allServices = document.querySelector('.allServices');
+    allServices.innerHTML = '';
+
+    services.forEach(service => {
+        const serviceItem = document.createElement('div');
+        serviceItem.className = 'servicesItem';
+
+        const iconServices = document.createElement('div');
+        iconServices.className = 'icon-services';
+
+        const icon = document.createElement('i');
+        icon.className = service.iconClass;
+
+        iconServices.appendChild(icon);
+        iconServices.appendChild(document.createElement('span'));
+
+        const serviceInfo = document.createElement('div');
+        serviceInfo.className = 'service-info';
+
+        const serviceTitle = document.createElement('h3');
+        serviceTitle.textContent = service.title;
+
+        const serviceDescription = document.createElement('p');
+        serviceDescription.textContent = service.description;
+
+        serviceInfo.appendChild(serviceTitle);
+        serviceInfo.appendChild(serviceDescription);
+
+        serviceItem.appendChild(iconServices);
+        serviceItem.appendChild(serviceInfo);
+
+        allServices.appendChild(serviceItem);
+    });
+}
+  
+ 
 window.onload = function () {
     populateCourses(); 
+    populateServices(); 
 };
-
-const translate_page = () => { 
-    populateCourses(); 
-}
-
+ 
