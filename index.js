@@ -8,15 +8,13 @@ menuIcon.addEventListener("click", () => {
     document.body.classList.toggle("open");
 });
 
-// Add active class to clicked link and remove from others
 navLinks.forEach(link => {
     link.addEventListener("click", function () {
-        navLinks.forEach(link => link.classList.remove("active")); // Remove 'active' from all links
-        this.classList.add("active"); // Add 'active' to the clicked link
+        navLinks.forEach(link => link.classList.remove("active"));
+        this.classList.add("active");
     });
 });
-
-// navlost code
+ 
 navlist.addEventListener("click", () => {
     navlist.classList.remove("active");
     menuIcon.classList.remove("active");
@@ -98,7 +96,6 @@ function populateCourses() {
     });
 }
  
-
 const services = [
     {
         title: "Web Development",
@@ -157,10 +154,97 @@ function populateServices() {
         allServices.appendChild(serviceItem);
     });
 }
-  
  
+// project object 
+const projects = [
+    {
+        name: "ChessTacTix",
+        description: "Chess Tactix is a two-player chess game developed in C++ using the SFML (Simple and Fast Multimedia Library). It features all the standard chess moves.",
+        image: "Assets/chessIcon.jpg",
+        link: "https://entitysafe.netlify.app/pages/AppList/-O2LmFl1tEM2iTJ38gk_",
+        category: "uiux"
+    },
+    {
+        name: "Cobra Quest",
+        description: "CobraQuest is an engaging snake game with multiple difficulty levels and a multiplayer mode. It offers a dynamic and challenging experience for both solo players and friends.",
+        image: "Assets/cobraIcon.jpg",
+        link: "https://entitysafe.netlify.app/pages/AppList/-O2KOuwcw-D2ekjgc5Ft",
+        category: "web"
+    },
+    {
+        name: "FlexiBase",
+        description: "FlexiBase is a lightweight database system inspired by MongoDB, implemented using Data Structures and Algorithms (DSA) core concepts. It supports basic CRUD operations and efficient data searching.",
+        image: "Assets/flexibaseIcon.jpg",
+        link: "https://entitysafe.netlify.app/pages/AppList/-O2Lqfm-dWrxvRaaP_pW",
+        category: "web"
+    },
+    {
+        name: "TetroMania",
+        description: "TetroMania is a classic Tetris game implemented in C++ using SFML. It features four distinct levels, each with increasing complexity and unique obstacles.",
+        image: "Assets/tetrisIcon.jpg",
+        link: "https://entitysafe.netlify.app/pages/AppList/-O2Li7KSR4uSpYJTmtTu",
+        category: "web"
+    },
+    {
+        name: "PixelPaint",
+        description: "Paint Master is an advanced MS Paint clone developed in Python using the Tkinter library. It provides a rich set of tools for creating and editing digital drawings.",
+        image: "Assets/paintIcon.jpg",
+        link: "https://entitysafe.netlify.app/pages/AppList/-O2LtCFIPA0mDAnX9KNr",
+        category: "web"
+    }
+];
+
+function populateProjects() {
+    const projectGallery = document.querySelector('.project-gallery');
+    projectGallery.innerHTML = '';
+
+    projects.forEach(project => {
+
+        const projectBox = document.createElement('div');
+        projectBox.className = `project-box mix ${project.category}`;
+
+        const projectContent = document.createElement('div');
+        projectContent.className = 'project-content';
+
+        const projectNameImg = document.createElement('div');
+        projectNameImg.className = 'project-name-img';
+
+        const projectImg = document.createElement('div');
+        projectImg.className = 'project-img';
+        const img = document.createElement('img');
+        img.src = project.image;
+        img.alt = '';
+        projectImg.appendChild(img);
+
+        const projectName = document.createElement('h3');
+        projectName.className = 'project-name';
+        projectName.textContent = project.name;
+
+        projectNameImg.appendChild(projectImg);
+        projectNameImg.appendChild(projectName);
+
+        const description = document.createElement('p');
+        description.textContent = project.description;
+
+        const viewProjectLink = document.createElement('a');
+        viewProjectLink.href = project.link;
+        viewProjectLink.className = 'view-project';
+        viewProjectLink.textContent = 'View Project';
+        viewProjectLink.target = '_blank';
+
+        projectContent.appendChild(projectNameImg);
+        projectContent.appendChild(description);
+        projectContent.appendChild(viewProjectLink);
+
+        projectBox.appendChild(projectContent);
+
+        projectGallery.appendChild(projectBox);
+    });
+}
+
 window.onload = function () {
     populateCourses(); 
-    populateServices(); 
+    populateServices();
+    populateProjects();
 };
  
