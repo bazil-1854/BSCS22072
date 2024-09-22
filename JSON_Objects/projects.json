@@ -1,0 +1,37 @@
+[
+    {
+        "name": "ChessTacTix",
+        "description": "Chess Tactix is a two-player chess game developed in C++ using the SFML (Simple and Fast Multimedia Library). It features all the standard chess moves.",
+        "image": "Assets/chessIcon.jpg",
+        "link": "https://entitysafe.netlify.app/pages/AppList/-O2LmFl1tEM2iTJ38gk_",
+        "category": "uiux"
+    },
+    {
+        "name": "Cobra Quest",
+        "description": "CobraQuest is an engaging snake game with multiple difficulty levels and a multiplayer mode. It offers a dynamic and challenging experience for both solo players and friends.",
+        "image": "Assets/cobraIcon.jpg",
+        "link": "https://entitysafe.netlify.app/pages/AppList/-O2KOuwcw-D2ekjgc5Ft",
+        "category": "web"
+    },
+    {
+        "name": "FlexiBase",
+        "description": "FlexiBase is a lightweight database system inspired by MongoDB, implemented using Data Structures and Algorithms (DSA) core concepts. It supports basic CRUD operations and efficient data searching.",
+        "image": "Assets/flexibaseIcon.jpg",
+        "link": "https://entitysafe.netlify.app/pages/AppList/-O2Lqfm-dWrxvRaaP_pW",
+        "category": "web"
+    },
+    {
+        "name": "TetroMania",
+        "description": "TetroMania is a classic Tetris game implemented in C++ using SFML. It features four distinct levels, each with increasing complexity and unique obstacles.",
+        "image": "Assets/tetrisIcon.jpg",
+        "link": "https://entitysafe.netlify.app/pages/AppList/-O2Li7KSR4uSpYJTmtTu",
+        "category": "web"
+    },
+    {
+        "name": "PixelPaint",
+        "description": "Paint Master is an advanced MS Paint clone developed in Python using the Tkinter library. It provides a rich set of tools for creating and editing digital drawings.",
+        "image": "Assets/paintIcon.jpg",
+        "link": "https://entitysafe.netlify.app/pages/AppList/-O2LtCFIPA0mDAnX9KNr",
+        "category": "web"
+    }
+]

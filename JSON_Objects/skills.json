@@ -1,0 +1,26 @@
+[
+    {
+        "name": "JavaScript",
+        "iconClass": "bx bxl-javascript"
+    },
+    {
+        "name": "React",
+        "iconClass": "bx bxl-react"
+    },
+    {
+        "name": "Node.js",
+        "iconClass": "bx bxl-nodejs"
+    },
+    {
+        "name": "Python",
+        "iconClass": "bx bxl-python"
+    },
+    {
+        "name": "My SQL",
+        "iconClass": "bx bx-data"
+    },
+    {
+        "name": "Git & GitHub",
+        "iconClass": "bx bxl-git"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Web Development",
+        "description": "Crafting responsive, scalable, and dynamic websites that drive engagement and elevate your brand.",
+        "iconClass": "bx bx-layer"
+    },
+    {
+        "title": "Desktop Development",
+        "description": "Developing robust desktop applications tailored to your business needs, ensuring seamless functionality.",
+        "iconClass": "bx bx-code-alt"
+    },
+    {
+        "title": "Mobile App Development",
+        "description": "Designing user-friendly mobile applications that provide exceptional experiences on all devices.",
+        "iconClass": "bx bxs-party"
+    },
+    {
+        "title": "UI / UX Design",
+        "description": "Creating intuitive and visually appealing designs to ensure a seamless and engaging user journey.",
+        "iconClass": "bx bx-desktop"
+    }
+]
