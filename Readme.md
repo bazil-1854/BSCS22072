@@ -1,6 +1,10 @@
 # Portfolio Website
 
 This repository contains the code for my  professional portfolio website built using HTML and CSS. The site is designed with a **mobile-first** approach and incorporates my skills, multiple stack of languages i know, projects, certifications, and more.
+</br>
+**This Branch contains code for Part-B of the assignment.**
+**Switch to Branch "part-a" to check the part A of the assignment.**
+**The main branch has the final code for my website.**
 
 ### Features
 
