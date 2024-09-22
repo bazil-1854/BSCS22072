@@ -3,17 +3,14 @@
 This repository contains the code for my  professional portfolio website built using HTML and CSS. The site is designed with a **mobile-first** approach and incorporates my skills, multiple stack of languages i know, projects, certifications, and more.
 
 ### Features
+
+- **Frequent Data Population with JSON Objects**: Populated Section like skills, services, projects with JSON objects.
 - **Responsive Navigation Bar**: A fully functional navigation bar that adapts to different screen sizes, with a hamburger menu on mobile.
 - **Mobile-First Design**: The website is optimized for mobile devices first, and scales up for larger screens.
-- **Multiple Languages**: The site includes section for multiple languages :
-  - English
-  - Arabic
-  - Urdu
-  - French
 - **Skills Display**: 
   - **Languages and Technologies**: JavaScript, React, Node.js, Python.
   - **Technical Details**: Git, GitHub, MongoDB, Firebase, SQL, REST APIs, Linux.
-- **Video Content**: An embedded video section to showcase relevant content.
+- **Video Content**: An embedded video section from my Youtbe to showcase relevant content of my Projects.
 - **Social Media Feed**: Icons with links to Youtube, Github, LinkedIn, and Instagram for easy access to social profiles.
 - **Projects Section**:
   - A list of projects with their titles, descriptions (e.g., desktop app, desktop games). 
