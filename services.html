@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional portfolio showcasing skills, projects, certifications, and more.">
+    <meta name="keywords" content="Bazil, Suhail, Portfolio, Web Development, Projects, Skills">
+    <meta name="author" content="Bazil Suhail">
+    <title>Bazil Suhail</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo"><span>B</span>azil</a>
+        <ul class="navlist">
+            <li><a href="about.html">About</a></li> 
+            <li><a href="coursework.html">CourseWork</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+        </ul>
+
+
+        <div class="right-header">
+            <select class="btn" id="language-selector"  onchange="translate_page()">
+                <option class="btn-option" value="en">English</option>
+                <option class="btn-option" value="ar">العربية</option>
+                <option class="btn-option" value="ur">Urdu</option>
+                <option class="btn-option" value="fr">French</option>
+            </select>
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header> 
+
+    <div class="spaceing"></div>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="main-text">
+            <h2 class="heading">My Services</h2>
+        </div>
+        <div class="line">
+            <div class="inner-line"></div>
+        </div>
+        <div class="heading-span">What Can I do for You !!</div>
+        <div class="allServices">
+            <!-- Services populated here by javascript object -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p class="footer-name">Bazil Suhail</p>
+                <p class="footer-email"><a href="mailto:your.email@example.com">bazil1854@gmail.com</a></p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.youtube.com" aria-label="YouTube" class="social-icon bx bxl-youtube"></a>
+                <a href="https://www.linkedin.com" aria-label="LinkedIn" class="social-icon bx bxl-linkedin"></a>
+                <a href="https://www.instagram.com" aria-label="Instagram" class="social-icon bx bxl-instagram"></a>
+                <a href="https://github.com" aria-label="GitHub" class="social-icon bx bxl-github"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./Javascript/services.js"></script> 
+</body>
+
+</html>

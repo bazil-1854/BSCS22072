@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+.spaceing{
+    height: 55px;
+}
+
 ::-webkit-scrollbar {
     width: 12px; /* Width of the scrollbar */
 }
@@ -117,6 +121,17 @@ ul.navlist {
     justify-content: end;
     grid-gap: .8rem;
 }
+
+.right-empty-header {
+    margin-top: -15px;
+    display: flex;
+    color: white;
+    width: 117px;
+    align-items: center;
+    justify-content: end;
+    grid-gap: .8rem;
+}
+
 
 .btn {
     background: var(--gradient-color-bg);
@@ -286,6 +301,7 @@ ul.navlist {
     margin: auto;
     overflow: hidden; 
     border: 5px rgb(231, 85, 0) solid;
+    background-color: black;
     animation: animateprofile 5s ease-in-out infinite;
 }
 

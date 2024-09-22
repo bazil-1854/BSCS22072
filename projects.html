@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional portfolio showcasing skills, projects, certifications, and more.">
+    <meta name="keywords" content="Portfolio, Web Development, Projects, Certifications, Hackathons, Skills">
+    <meta name="author" content="Your Name">
+    <title>Bazil Suhail</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo"><span>B</span>azil</a>
+        <ul class="navlist">
+            <li><a href="about.html">About</a></li> 
+            <li><a href="coursework.html">CourseWork</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+
+        <div class="right-header">
+            <select class="btn" id="language-selector"  onchange="translate_page()">
+                <option class="btn-option" value="en">English</option>
+                <option class="btn-option" value="ar">العربية</option>
+                <option class="btn-option" value="ur">Urdu</option>
+                <option class="btn-option" value="fr">French</option>
+            </select>
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header> 
+    <div class="spaceing"></div>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="main-text">
+            <h2 class="heading">My Projects</h2>
+        </div>
+        <div class="line">
+            <div class="inner-line"></div>
+        </div>
+        <div class="project-gallery">
+            <!-- Project populated here by javascript object -->
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="projects" id="projects">
+        <div class="main-text">
+            <h2 class="heading">Projects Video Content</h2>
+        </div>
+        <div class="project-gallery">
+            <div class="video-content">
+                <iframe src="https://www.youtube.com/embed/3XhKu9YnS3o" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="video-content">
+                <iframe src="https://www.youtube.com/embed/oLvk7NzsmxY" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="video-content">
+                <iframe src="https://www.youtube.com/embed/Sj-DQWourYk" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="video-content">
+                <iframe src="https://www.youtube.com/embed/Q1Gpnd9hhuI" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="video-content">
+                <iframe src="https://www.youtube.com/embed/dEuobtAqfBI" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section> 
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p class="footer-name">Bazil Suhail</p>
+                <p class="footer-email"><a href="mailto:your.email@example.com">bazil1854@gmail.com</a></p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.youtube.com" aria-label="YouTube" class="social-icon bx bxl-youtube"></a>
+                <a href="https://www.linkedin.com" aria-label="LinkedIn" class="social-icon bx bxl-linkedin"></a>
+                <a href="https://www.instagram.com" aria-label="Instagram" class="social-icon bx bxl-instagram"></a>
+                <a href="https://github.com" aria-label="GitHub" class="social-icon bx bxl-github"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./Javascript/projects.js"></script> 
+</body>
+
+</html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A professional portfolio showcasing skills, projects, certifications, and more.">
     <meta name="keywords" content="Portfolio, Web Development, Projects, Certifications, Hackathons, Skills">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Bazil Suhail">
     <title>Bazil Suhail</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -15,24 +15,17 @@
 <body>
 
     <header class="navbar">
-        <a href="#" class="logo"><span>B</span>azil</a>
+        <a href="index.html" class="logo"><span>B</span>azil</a>
         <ul class="navlist">
-            <li><a href="#about" class="active">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#coursework">CourseWork</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="about.html" >About</a></li> 
+            <li><a href="coursework.html">CourseWork</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
 
 
-        <div class="right-header">
-            <select class="btn" id="language-selector"  onchange="translate_page()">
-                <option class="btn-option" value="en">English</option>
-                <option class="btn-option" value="ar">العربية</option>
-                <option class="btn-option" value="ur">Urdu</option>
-                <option class="btn-option" value="fr">French</option>
-            </select>
+        <div class="right-empty-header">
             <div class="menu-icon">
                 <div class="bar"></div>
             </div>
@@ -59,77 +52,7 @@
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-img ">
-            <img src="Assets/logo.png" alt="logo Not Found" class="aboutHero">
-        </div>
-        <div class="about-content">
-            <h2 class="heading">About Me</h2>
-            <p>Creative full-stack developer with a knack for innovation. Skilled in modern web technologies and eager
-                to learn encourages me to deliver efficient and scalable solutions.</p>
-            <div class="about-btn">
-                <button class="active">Education</button>
-                <button >Technical Skills</button>
-                <button>Languages </button>
-            </div>
-            <div class="content-btn">
-                  <!-- Content for Education -->
-                  <div class="content" style="display: none;">
-                    <div class="text-box">
-                        <p>Bachelor's Degree in Computer Science</p>
-                        <span>ITU Punjab Lahore, 202 - Currently in Semester 4</span>
-                    </div>
-                    <div class="text-box">
-                        <p>Intermediate in Computer Science</p>
-                        <span>Punjab group of Colleges Lahore - 2024</span>
-                    </div>
-                    <div class="text-box">
-                        <p>Matriculation In Computer Science</p>
-                        <span>Junior Campus Hight School</span>
-                    </div>
-                </div>
-
-                <!-- Content for Technical Skills -->
-                <div class="content">
-                    <div class="text-box">
-                        <p>Full Stack Development</p>
-                        <span>Building scalable web applications from front-end to back-end.</span>
-                    </div>
-                    <div class="text-box">
-                        <p>UI/UX Design</p>
-                        <span>Creating intuitive and engaging user interfaces with user-centered design
-                            principles.</span>
-                    </div>
-                    <div class="text-box">
-                        <p>Version Control & Collaboration</p>
-                        <span>Proficient in Git, GitHub, and working with cross-functional teams.</span>
-                    </div>
-                </div>              
-
-                <!-- Content for Languages -->
-                <div class="content" style="display: none;">
-                    <div class="text-box">
-                        <p><i class='bx bxl-html5'></i> HTML5 & CSS3</p>
-                        <span>Building modern, responsive, and cross-browser compatible websites.</span>
-                    </div>
-                    <div class="text-box">
-                        <p><i class='bx bxl-javascript'></i> JavaScript & React</p>
-                        <span>Proficient in dynamic client-side scripting and React for building interactive UIs.</span>
-                    </div>
-                    <div class="text-box">
-                        <p><i class='bx bxl-nodejs'></i> Node.js & Express</p>
-                        <span>Developing server-side applications and APIs with efficient, scalable solutions.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="cvContent">
-                <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
-            </div>
-        </div>
-    </section>
-
+ 
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="main-text">
@@ -177,109 +100,7 @@
                 <h3>Git & GitHub</h3>
             </div>
         </div>
-    </section>
-    
-    <!-- Coursework Section -->
-    <section id="coursework" class="coursework-section">
-        <div class="main-text">
-            <h2 class="heading">Course Work</h2>
-        </div>
-        <div class="line">
-            <div class="inner-line"></div>
-        </div>
-        <div class="coursework-line"></div>
-        <div class="coursework-grid">
-            <!-- Coursework populated here by javascript object -->
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="main-text">
-            <h2 class="heading">My Services</h2>
-        </div>
-        <div class="line">
-            <div class="inner-line"></div>
-        </div>
-        <div class="heading-span">What Can I do for You !!</div>
-        <div class="allServices">
-            <!-- Services populated here by javascript object -->
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="main-text">
-            <h2 class="heading">My Projects</h2>
-        </div>
-        <div class="line">
-            <div class="inner-line"></div>
-        </div>
-        <div class="project-gallery">
-            <!-- Project populated here by javascript object -->
-        </div>
-    </section>
-
-
-
-    <!-- Videos Section -->
-    <section class="projects" id="projects">
-        <div class="main-text">
-            <h2 class="heading">Projects Video Content</h2>
-        </div>
-        <div class="project-gallery">
-            <div class="video-content">
-                <iframe src="https://www.youtube.com/embed/3XhKu9YnS3o" frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <div class="video-content">
-                <iframe src="https://www.youtube.com/embed/oLvk7NzsmxY" frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <div class="video-content">
-                <iframe src="https://www.youtube.com/embed/Sj-DQWourYk" frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <div class="video-content">
-                <iframe src="https://www.youtube.com/embed/Q1Gpnd9hhuI" frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <div class="video-content">
-                <iframe src="https://www.youtube.com/embed/dEuobtAqfBI" frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Contact Form Section -->
-    <section id="contact" class="contact-section">
-        <div class="main-text"></div>
-            <h2 class="heading">Let's Get in Touch</h2>
-        </div>
-        <div class="line">
-            <div class="inner-line"></div>
-        </div>
-        <div class="contact-form-container">
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
-                </div>
-                <button type="submit" class="contact-button">Send Message</button>
-            </form>
-        </div>
-    </section>
-
+    </section> 
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-content">
@@ -295,8 +116,6 @@
             </div>
         </div>
     </footer>
-
-
 
     <script src="index.js"></script> 
 </body>
