@@ -5,18 +5,18 @@
         "iconClass": "bx bx-layer"
     },
     {
-        "title": "Desktop Development",
-        "description": "Developing robust desktop applications tailored to your business needs, ensuring seamless functionality.",
+        "title": "ڈیسک ٹاپ ڈویلپمنٹ",
+        "description": "آپ کے کاروباری ضروریات کے مطابق مضبوط ڈیسک ٹاپ ایپلیکیشنز تیار کرنا، جو ہموار فعالیت کو یقینی بنائیں",
         "iconClass": "bx bx-code-alt"
     },
     {
-        "title": "Mobile App Development",
-        "description": "Designing user-friendly mobile applications that provide exceptional experiences on all devices.",
+        "title": "تطوير تطبيقات الهاتف المحمول",
+        "description": "تصميم تطبيقات موبايل سهلة الاستخدام توفر تجارب استثنائية على جميع الأجهزة",
         "iconClass": "bx bxs-party"
     },
     {
-        "title": "UI / UX Design",
-        "description": "Creating intuitive and visually appealing designs to ensure a seamless and engaging user journey.",
+        "title": "Design UI / UX",
+        "description": "Créer des designs intuitifs et visuellement attrayants pour garantir un parcours utilisateur fluide et engageant.",
         "iconClass": "bx bx-desktop"
     }
 ]
