@@ -2,13 +2,15 @@
 
 This repository contains the code for my  professional portfolio website built using HTML and CSS. The site is designed with a **mobile-first** approach and incorporates my skills, multiple stack of languages i know, projects, certifications, and more.
 </br>
-**This Branch contains code for Part-B of the assignment.**
-**Switch to Branch "part-a" to check the part A of the assignment.**
-**The main branch has the final code for my website.**
+
+- **This is the "part-b" branch and has the Part B's code for assignment.**
+- **Switch to Branch "part-a" to check the part A of the assignment.** 
+- **Switch to Branch "main" to check the final Look of website.**
 
 ### Features
 
 - **Frequent Data Population with JSON Objects**: Populated Section like skills, services, projects with JSON objects.
+- **Multiple Dynamic Language Support**: Populated  skills, services, projects with mutliple language (english, urdu, french, arabic) using JSON objects.
 - **Responsive Navigation Bar**: A fully functional navigation bar that adapts to different screen sizes, with a hamburger menu on mobile.
 - **Mobile-First Design**: The website is optimized for mobile devices first, and scales up for larger screens.
 - **Skills Display**: 
